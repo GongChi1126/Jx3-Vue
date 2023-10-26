@@ -6,7 +6,13 @@ const router = createRouter({
     {
       path: "/",
       name: "Jx3",
-      component: () => import("@/views/Main.vue")
+      component: () => import("@/views/Main.vue"),
+      children: [
+        {
+          path: "role",
+          component: () => import("@/views/Account.vue"),
+        }
+      ],
     },
     {
       path: "/test",

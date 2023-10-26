@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">劍俠情緣三國際服</a>
+        <div class="container-fluid navbar">
+            <img src="@/assets/icon/logo.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,13 +12,16 @@
                         <a class="nav-link active" aria-current="page" href="#">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">查詢</a>
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">註冊</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -28,4 +31,20 @@
 
 </script>
     
-<style></style>
+<style scoped>
+.navbar {
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+img {
+    width: 128px;
+    margin-left: 32px;
+    height: 64px;
+}
+</style>
