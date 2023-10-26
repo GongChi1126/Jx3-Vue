@@ -1,27 +1,36 @@
 <template>
     <Navbar></Navbar>
-    <div class="mainbody">
-        <h3>門派</h3>
-        <input type="text" class="form-control" v-model="job">
-        <h3>等級</h3>
-        <input type="text" class="form-control" v-model="name">
-        <h3>體型</h3>
-        <select class="form-select" aria-label="Default select example" v-model="body">
-            <option selected>請選擇</option>
-            <option value="成男">成男</option>
-            <option value="成女">成女</option>
-            <option value="正太">正太</option>
-            <option value="蘿莉">蘿莉</option>
-        </select>
-        <h3>角色ID</h3>
-        <input type="text" class="form-control" v-model="nevel">
-        <h3>精力</h3>
-        <input type="text" class="form-control" v-model="energy">
-        <h3>耐力</h3>
-        <input type="text" class="form-control" v-model="endurance">
+    <div style="display: flex; justify-content: center">
+        <div class="mainbody">
+            <h3>門派</h3>
+            <select class="form-select" aria-label="Default select example" v-model="job">
+                <option selected>請選擇</option>
+                <option value="成男">成男</option>
+                <option value="成女">成女</option>
+                <option value="正太">正太</option>
+                <option value="蘿莉">蘿莉</option>
+            </select>
+            <h3>等級</h3>
+            <input type="text" class="form-control" v-model="name">
+            <h3>體型</h3>
+            <select class="form-select" aria-label="Default select example" v-model="body">
+                <option selected>請選擇</option>
+                <option value="成男">成男</option>
+                <option value="成女">成女</option>
+                <option value="正太">正太</option>
+                <option value="蘿莉">蘿莉</option>
+            </select>
+            <h3>角色ID</h3>
+            <input type="text" class="form-control" v-model="nevel">
+            <h3>精力</h3>
+            <input type="text" class="form-control" v-model="energy">
+            <h3>耐力</h3>
+            <input type="text" class="form-control" v-model="endurance">
 
-        <button type="button" class="btn btn-dark" @click="addrole">新增</button>
-        <button type="button" class="btn btn-dark" @click="goBack">返回</button>
+            <button type="button" class="btn btn-dark" @click="addrole">新增</button>
+            <button type="button" class="btn btn-dark" @click="goBack">返回</button>
+        </div>
+
     </div>
 </template>
     
@@ -65,7 +74,6 @@ const addrole = () => {
 .mainbody {
     width: 80%;
     margin: 0 auto;
-    background-color: ;
 }
 
 .mainbody input {

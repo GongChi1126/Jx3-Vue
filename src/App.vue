@@ -9,4 +9,8 @@ import "bootstrap/dist/js/bootstrap.js"
   <router-view></router-view>
 </template>
 
-<style scoped></style>
+<style>
+body {
+  background-color: #e7ecef;
+}
+</style>
