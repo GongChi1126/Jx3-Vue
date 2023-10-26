@@ -1,12 +1,11 @@
 <template>
     <Navbar></Navbar>
-    <router-link to="/test">go to test</router-link>
     <router-view></router-view>
 </template>
-<script>
+<script setup lang="js">
 import { useRouter } from 'vue-router'
-// import { ref } from 'vue'
 import Navbar from '../components/Navbar.vue';
+// import { ref } from 'vue'
 const router = useRouter()
 </script>
 <style scoped></style>
